@@ -1,0 +1,47 @@
+{
+  "supplierId": "18",
+  "generalInfo": {
+    "supplierType": "Automotive Parts (AP)",
+    "srm": "Iversen Martin J(9386), 35930",
+    "supplierAddress": {
+      "address1": "Verkstadsgatan 21",
+      "address2": "Box 23",
+      "address3": "SE-568 31 SKILLINGARYD",
+      "city": "Sweden",
+      "telephone": "+46 37076800",
+      "Fax": "+46 37071761",
+      "vatNumber": "SE556054267101",
+      "web": "www.protonengineering.com"
+    },
+    "roleStructure": {
+      "parent": [
+        {
+          "id": "52337",
+          "name": "Proton Engineering AB",
+          "functionalArea": "Parent Company",
+          "address": "Varanamo,Sweden,EMEA"
+        }
+      ],
+      "child": [
+        {
+          "id": "18",
+          "name": "Proton Engineering AB",
+          "functionalArea": "Sales Office",
+          "address": "Skillingaryd,Sweden,EMEA"
+        },
+        {
+          "id": "18",
+          "name": "Proton Engineering AB",
+          "functionalArea": "Manufacturing Site",
+          "address": "Skillingaryd,Sweden,EMEA"
+        },
+        {
+          "id": "18",
+          "name": "Proton Engineering AB",
+          "functionalArea": "Shipment",
+          "address": "Skillingaryd,Sweden,EMEA"
+        }
+      ]
+    }
+  }
+}

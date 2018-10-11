@@ -1,0 +1,58 @@
+.master
+{ 
+    .master-row{
+    
+        border-bottom: 1px solid #CCC;
+        border-collapse: collapse;
+}
+th{
+    font-weight: 500;
+}
+.child{
+    margin-bottom: 15px;
+    margin-top:15px;
+}
+    
+}
+
+.child
+{width: 100%}
+
+.class-first{
+    width: 25%;
+}
+.class-second{
+    width: 65%;
+}
+.class-third{
+    display: inline;
+    i{
+        float: right;
+        margin-top:9px;
+    }
+    a{
+        text-decoration: underline;
+        font-size: 0.7rem;
+    }
+}
+
+.class-fourth{
+    width: 28%;
+}
+
+.class-fivth{
+    width: 15%;
+}
+
+.container{
+    margin-top: 1%;
+}
+
+tbody{
+    margin-top:10px;
+    margin-bottom: 10px;
+    
+}
+
+
+

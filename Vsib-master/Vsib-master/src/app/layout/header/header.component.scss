@@ -1,0 +1,12 @@
+.nav {
+  a{
+  color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    padding-right: 0.5rem;
+    padding-left: 1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+}

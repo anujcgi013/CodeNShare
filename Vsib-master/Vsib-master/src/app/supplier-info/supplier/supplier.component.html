@@ -1,0 +1,25 @@
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#General" role="tab" aria-controls="home" aria-selected="true">General Info</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="certificate-tab" data-toggle="tab" href="#Certificate" role="tab" aria-controls="certificate" aria-selected="false">Certificates</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="suppliesto-tab" data-toggle="tab" href="#Suppliesto" role="tab" aria-controls="suppliesto" aria-selected="false">Supplies To</a>
+  </li>
+  <li class="nav-item">
+      <a class="nav-link" id="purchaser-tab" data-toggle="tab" href="#purchasers" role="tab" aria-controls="purchasers" aria-selected="false">Purchasers</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="edistatus-tab" data-toggle="tab" href="#edistatus" role="tab" aria-controls="edistatus" aria-selected="false">EDI Status</a>
+      </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="General" role="tabpanel" aria-labelledby="home-tab"><app-generalinfo></app-generalinfo></div>
+  <div class="tab-pane fade" id="Certificate" role="tabpanel" aria-labelledby="certificate-tab"><app-certificates></app-certificates></div>
+  <div class="tab-pane fade" id="Suppliesto" role="tabpanel" aria-labelledby="suppliesto-tab"><app-suppliesto></app-suppliesto></div>
+  <div class="tab-pane fade" id="purchasers" role="tabpanel" aria-labelledby="purchaser-tab"><app-purchasers></app-purchasers></div>
+  <div class="tab-pane fade" id="edistatus" role="tabpanel" aria-labelledby="edistatus-tab"><app-edistatus></app-edistatus></div>
+</div>

@@ -1,0 +1,70 @@
+<app-layout>
+  <div class="search-container">
+      <div class="container">
+        <div class="alert alert-warning alert-dismissible" *ngIf="!showDetails && showLabel">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+        </div>
+        <div class="alert alert-danger alert-dismissible" *ngIf="errorMsg.length > 0">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          <strong>Error!</strong> {{errorMsg}}.
+        </div>
+          <div class="col-lg-12">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">Search Criteria</button>
+                      <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">All</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div role="separator" class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">All</button>
+                      <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">All</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <div role="separator" class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                  </div>
+                  <input id="typeahead-format" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search"
+                      aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                      [resultFormatter]="formatter" />
+                  <button class="btn btn-secondary" (click)="getDetails()"><i class="fa fa-search"></i></button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="backcolor" [hidden]="!showDetails">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="card">
+                      <div class="card-body" >
+                          <app-sidebar></app-sidebar>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-9">
+                    <h5>Proton Engineering AB (18)&nbsp;<i class="fa fa-info-circle"></i></h5>
+                  <div class="card">
+
+                      <div class="card-body">
+                        <div>
+
+                          <app-supplier></app-supplier>
+                        </div>
+                        <!--<router-outlet></router-outlet>-->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</app-layout>
+<app-supplier hidden></app-supplier>

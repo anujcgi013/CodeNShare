@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="generalinfo header"><span>Supplier Type</span></div>
+      <select class="form-control">
+        <option>Automotive Parts (AP)</option>
+        <option>Automotive Parts (AP1)</option>
+        <option>Automotive Parts (AP2)</option>
+        <option>Automotive Parts (AP3)</option>
+      </select> <br/>
+      <div class="generalinfo header"><span>SRM</span></div>
+      <span class="span-font">{{generalDetails?.srm}}</span>
+      <div class="w-100"></div>
+      <br>
+      <div class="generalinfo header"><span>Supplier Addres</span></div>
+      <div class="row grid-row-gap">
+        <div class="col-12">
+          <div class="span-font">
+            <span>{{generalDetails?.supplierAddress.address1}}</span><br>
+            <span>{{generalDetails?.supplierAddress.address2}}</span><br>
+            <span>{{generalDetails?.supplierAddress.address3}}</span><br>
+            <span>{{generalDetails?.supplierAddress.city}}</span><br>
+            <span>Telephone:{{generalDetails?.supplierAddress.telephone}}</span> <br>
+            <span>Fax:{{generalDetails?.supplierAddress.Fax}}</span> <br>
+            <span>VAT No:{{generalDetails?.supplierAddress.vatNumber}}</span> <br>
+            <a href="#">{{generalDetails?.supplierAddress.web}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="roles-structure">
+        <div class="row">
+          <div class="col-lg-4">
+            <p class="header">Role & Structure</p>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6 parent-nav"><span>Parent</span></div>
+              <div class="col-lg-6 child-nav"><span>Child</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngFor="let roleS of generalDetails?.roleStructure?.parent" id="parentrow">
+        <div class="row parent-grid-row">
+          <div class="col-lg-3 parent-grid-pipe-left">{{roleS.id}}</div>
+          <div class="col-lg-9">
+            <span>{{roleS.name}}</span><br>
+            <span style="font-size: 0.8em">{{roleS.functionalArea}}</span><br>
+            <span style="font-size: 0.8em">{{roleS.address}}</span>
+          </div>
+        </div>
+      </div>
+      <div *ngFor="let roleS of generalDetails?.roleStructure?.child" id="childrow">
+        <div class="row child-grid-row">
+          <div class="col-lg-3 child-grid-pipe-left">{{roleS.id}}</div>
+          <div class="col-lg-9">
+            <span>{{roleS.name}}</span><br>
+            <span style="font-size: 0.8em">{{roleS.functionalArea}}</span><br>
+            <span style="font-size: 0.8em">{{roleS.address}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+.container{
+    font-size: 0.9rem;
+    margin-top:1%;
+}
+.form-control
+{
+    color :gray;
+    font-size: 0.9em;
+}
+.span-font
+{
+    color :gray;
+    font-size: 0.9em;
+}
+.generalinfo
+{
+    border-bottom:1px solid #ccc;
+    padding-bottom: 3px;
+    margin-bottom:7px;   
+}
+.header
+{
+    font-size: 16px
+}
+
+.roles-structure
+{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1%;
+}
+/* .roles-structure p
+{
+    float:left;
+}
+.roles-structure div
+{
+    float:right;
+} */
+
+.parent-nav
+{
+    border-left:4px solid #02bceb;
+    padding-left:4px;
+}
+
+.child-nav
+{
+    border-left:4px solid #ffc107;
+    padding-left:4px;
+}
+
+.parent-grid-row
+{
+    border-bottom:1px solid #ccc;
+    margin-bottom: 1px;
+    margin-left:0px;
+}
+
+.parent-grid-pipe-left
+{
+    border-left:4px solid #02bceb;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.parent-grid-row .col-lg-9,.child-grid-row .col-lg-9
+{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.child-grid-row
+{
+    background-color:#87cefa;
+    border-bottom:1px solid #ccc;
+    margin-bottom: 1px;
+    margin-left:0px;
+}
+
+.child-grid-pipe-left
+{
+    border-left:4px solid #ffc107;
+    padding-top:5px;
+    padding-bottom:5px;
+}
